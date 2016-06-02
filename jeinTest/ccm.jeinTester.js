@@ -8,6 +8,7 @@ ccm.component( {
   },
   Instance: function () {
     var sendSet = false; //Wenn true, werden Daten aus dem json zum Server zum Speichern gesendet
+    var t1,t2;
     var self = this;
     self.render = function ( callback ) {
         var element = ccm.helper.element( self );
@@ -36,7 +37,9 @@ ccm.component( {
                 starttext:"Hier nun einige Fragen zum beantworten. Viel Erfolg!",
                 onclickstart:function(){
                     ccm.helper.find(self, ".questions").css("visibility","visible");
-                    ccm.helper.find(self, ".start").css("visibility","hidden");
+                    ccm.helper.find(self, ".start").remove();
+                    ccm.helper.find(self, ".questions").css("position","static");
+                    t1 = new Date().getTime();
                 }
             }));
             
@@ -85,12 +88,15 @@ ccm.component( {
             }
             
             function finishTest(){
+                t2 = new Date().getTime();
+                
                 var correct = ccm.helper.find(self,".correct").length;
                 var grammar = correct > 1 ? "Fragen" : "Frage";
+                var time = (t2 - t1)/1000;
                 
                 questions_div.parent().append(ccm.helper.html(self.html.get("results"),{
                     onclickrestart: function(){location.reload();},
-                    result:"Du hast "+correct+" "+grammar+" richtig beantwortet."
+                    result:"Du hast "+ correct +" "+ grammar +" in "+ time +" Sekunden richtig beantwortet."
                 }));
             }
             
