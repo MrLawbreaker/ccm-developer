@@ -20,6 +20,11 @@
             "qid":4,
             "question": "Das A in AJAX steht für autonom",
             "correct": false
+        },
+        {
+            "qid":5,
+            "question": "Mit Git lässt sich versionskontrolle realisieren",
+            "correct":true
         }
     ]
 }
