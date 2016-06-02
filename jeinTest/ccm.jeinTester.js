@@ -3,11 +3,11 @@ ccm.component( {
   config: {
     html:  [ ccm.store, { local: 'templates.json' } ],
     key:   'questionSet',
-    store: [ ccm.store, { url: 'dataset.json', store: 'questiontest' } ],
+    store: [ ccm.store, { url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'yesnoQuestion' } ],
     style: [ ccm.load, 'style.css' ]
   },
   Instance: function () {
-    var sendSet = true; //Wenn true, werden Daten aus dem json zum Server zum Speichern gesendet
+    var sendSet = false; //Wenn true, werden Daten aus dem json zum Server zum Speichern gesendet
     var self = this;
     self.render = function ( callback ) {
         var element = ccm.helper.element( self );
