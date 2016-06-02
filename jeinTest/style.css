@@ -1,0 +1,27 @@
+.question {
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 1px solid;
+    margin: 2px;
+    padding: 5px;
+}
+
+.questions {
+    visibility: hidden;
+}
+
+.questions button{
+    margin: auto 3px;
+}
+
+.wrong{
+    background: red
+}
+
+.correct{
+    background: green
+}
+
+.results{
+    
+}

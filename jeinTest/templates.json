@@ -1,0 +1,70 @@
+{
+    "questions": {
+        "tag": "div",
+        "class": "questions"
+    },
+    
+    "question": {
+        "tag": "div",
+        "class": "question",
+        "id": "%qid%",
+        "inner": [
+            {
+                "tag": "div",
+                "class": "text",
+                "inner": "%text%"
+            },
+            {
+                "tag":"button",
+                "class":"btnWahr",
+                "data-btnid":"%qid%",
+                "onclick":"%onsubmittrue%",
+                "inner":"WAHR"
+            },
+            {
+                "tag":"button",
+                "class":"btnFalsch",
+                "data-btnid":"%qid%",
+                "onclick":"%onsubmitfalse%",
+                "inner":"FALSCH"
+            }
+        ]
+    },
+    
+    "start": {
+        "tag":"div",
+        "class":"start",
+        "inner": [   
+            {
+                "tag":"div",
+                "class":"starttext",
+                "inner":"%starttext%"
+            },        
+            {
+                "tag":"button",
+                "class":"btnStart",
+                "onclick":"%onclickstart%",
+                "inner":"START"
+            }
+        ]
+    },
+    
+    "results": {
+        "tag":"div",
+        "class":"results",
+        "inner":[
+            {
+                "tag":"div",
+                "class":"result",
+                "inner":"%result%"
+            },
+            {
+                "tag":"button",
+                "class":"btnRestart",
+                "onclick":"%onclickrestart%",
+                "inner":"Restart"
+            }
+        ]
+    }
+}
+
