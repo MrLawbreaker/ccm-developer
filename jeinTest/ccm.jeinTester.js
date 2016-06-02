@@ -85,9 +85,12 @@ ccm.component( {
             }
             
             function finishTest(){
+                var correct = ccm.helper.find(self,".correct").length;
+                var grammar = correct > 1 ? "Fragen" : "Frage";
+                
                 questions_div.parent().append(ccm.helper.html(self.html.get("results"),{
                     onclickrestart: function(){location.reload();},
-                    result:"Du hast "+ccm.helper.find(self,".correct").length+" Fragen richtig beantwortet."
+                    result:"Du hast "+correct+" "+grammar+" richtig beantwortet."
                 }));
             }
             
