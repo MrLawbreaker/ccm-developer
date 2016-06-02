@@ -1,13 +1,15 @@
-.question {
+.question, .results, .start {
     font-family: sans-serif;
     font-weight: bold;
     border: 1px solid;
+    border-radius: 2px;
     margin: 2px;
     padding: 5px;
 }
 
 .questions {
     visibility: hidden;
+    position: absolute;
 }
 
 .questions button{
@@ -15,17 +17,22 @@
 }
 
 .wrong{
-    background: red
+    background: red;
 }
 
 .correct{
-    background: green
+    background: green;
 }
 
-.yesno{
+#yesno{
     border: 1px solid;
 }
 
-.chat{
+#chat{
     border: 1px solid;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 1.5em;
 }
