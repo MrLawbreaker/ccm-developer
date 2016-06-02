@@ -3,5 +3,15 @@
 <meta charset="utf-8">
 <script src="http://akless.github.io/ccm-developer/libs/ccm.min.js"></script>
 <script>
-  ccm.render( 'ccm.jeinTester.js'  );
+    ccm.render( "ccm.jeinTester.js" ,{ element: $("#yesno")}  );
+    ccm.render( "Chat/ccm.chat.js" ,{ element: $("#chat")}  );
 </script>
+
+<body>
+<div class="wrapper">
+    <div id="yesno"></div>
+    <div>Euer Feedback könnt ihr hier abgeben:</div>
+    <div id="chat"></div>
+</div>
+
+</body>

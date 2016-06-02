@@ -3,7 +3,7 @@ ccm.component( {
   config: {
     html:  [ ccm.store, { local: 'templates.json' } ],
     key:   'questionSet',
-    store: [ ccm.store, { url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'yesnoQuestion' } ],
+    store: [ ccm.store, { url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'malden_yesnoQuestion' } ],
     style: [ ccm.load, 'style.css' ]
   },
   Instance: function () {

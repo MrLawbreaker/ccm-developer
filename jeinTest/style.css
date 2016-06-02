@@ -22,6 +22,10 @@
     background: green
 }
 
-.results{
-    
+.yesno{
+    border: 1px solid;
+}
+
+.chat{
+    border: 1px solid;
 }
