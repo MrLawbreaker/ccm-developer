@@ -2,28 +2,23 @@
     "key": "questionSet",
     "questions": [
         {
-            "qid":1,
             "question": "1 > 2",
             "correct": false
         },
         {
-            "qid":2,
             "question": "Deutschland ist in Europa",
             "correct": true
         },
         {
-            "qid":3,
             "question": "Java ist eine Programmiersprache",
             "correct": true
         },
         {
-            "qid":4,
             "question": "Das A in AJAX steht für autonom",
             "correct": false
         },
         {
-            "qid":5,
-            "question": "Mit Git lässt sich versionskontrolle realisieren",
+            "question": "Mit Git lässt sich Versionskontrolle realisieren",
             "correct":true
         }
     ]

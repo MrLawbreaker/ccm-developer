@@ -7,7 +7,7 @@
     "question": {
         "tag": "div",
         "class": "question",
-        "id": "%qid%",
+        "data-qid": "%qid%",
         "inner": [
             {
                 "tag": "div",
@@ -45,6 +45,18 @@
                 "class":"btnStart",
                 "onclick":"%onclickstart%",
                 "inner":"START"
+            },
+            {
+                "tag":"button",
+                "class":"btnEdit",
+                "onclick":"%onclickedit%",
+                "inner":"Edit"
+            },
+            {
+                "tag":"button",
+                "class":"btnLogin",
+                "onclick":"%onclicklogin%",
+                "inner":"Login"
             }
         ]
     },
@@ -62,7 +74,52 @@
                 "tag":"button",
                 "class":"btnRestart",
                 "onclick":"%onclickrestart%",
-                "inner":"Restart"
+                "inner":"Okay!"
+            }
+        ]
+    },
+    
+    "questionCheckbox": {
+        "tag":"label",
+        "inner":[
+            {
+                "tag":"input",
+                "type":"checkbox",
+                "class":"qCheckbox",
+                "data-chkid":"%chkid%",
+                "checked":"%checked%",
+                "inner":"Wahr"
+            },
+            {
+                "tag":"span",
+                "inner":"Wahr"
+            }
+        ]
+    },
+    
+    "editButtons":{
+        "tag":"div",
+        "class":"editButtons",
+        "inner": [
+            {
+                "tag":"button",
+                "class":"btnAddNew",
+                "onclick":"%onclickAddNew%",
+                "inner":"Neue Frage"
+            },
+
+            {
+                "tag":"button",
+                "class":"btnApply",
+                "onclick":"%onclickApply%",
+                "inner":"Speichern"
+            },
+            
+            {
+                "tag":"button",
+                "class":"btnCancel",
+                "onclick":"%onclickCancel%",
+                "inner":"Abbrechen"
             }
         ]
     }
