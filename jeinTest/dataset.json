@@ -1,4 +1,4 @@
-{
+ccm.callback["dataset.json"]({
     "key": "questionSet",
     "questions": [
         {
@@ -22,4 +22,4 @@
             "correct":true
         }
     ]
-}
+})

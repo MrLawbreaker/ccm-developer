@@ -1,10 +1,10 @@
 ccm.component( {
-  name: 'jeinTester',
+  name: 'jeintester',
   config: {
-    html:  [ ccm.store, { local: 'templates.json' } ],
+    html:  [ ccm.store, { local: 'https://raw.githubusercontent.com/MrLawbreaker/ccm-developer/master/jeinTest/templates.json' } ],
     key:   'questionSet',
     store: [ ccm.store, { store: 'yesnoQuestion' } ],
-    style: [ ccm.load, 'style.css' ],
+    style: [ ccm.load, 'https://raw.githubusercontent.com/MrLawbreaker/ccm-developer/master/jeinTest/style.css' ],
     user: [ccm.instance, 'http://kaul.inf.h-brs.de/ccm/components/user2.js'],
     adminList: [""]
   },

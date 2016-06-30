@@ -1,4 +1,4 @@
-{
+ccm.callback["templates.json"]({
     "questions": {
         "tag": "div",
         "class": "questions"
@@ -123,5 +123,5 @@
             }
         ]
     }
-}
+})
 
